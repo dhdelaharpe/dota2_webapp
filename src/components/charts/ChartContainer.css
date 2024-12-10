@@ -1,0 +1,19 @@
+.chart{
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .chart-container{
+    flex:1;
+    min-width: 40%;
+    margin:0 auto;
+    text-align: center;
+    position:sticky;
+    overflow:hidden;
+    display:flex;
+    flex-direction: column;
+  }
+  

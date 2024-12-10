@@ -1,0 +1,195 @@
+.hero-info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero-banner{
+    padding:1.25rem;
+    display:flex;
+    flex-direction: row;
+    width:90%;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: visible;
+    box-sizing: border-box;
+    
+}
+.hero-name{
+    text-shadow: 0 0 0.125rem black;
+    padding:1rem;
+    margin:1rem;
+    height:5rem;
+}
+.hero-header{
+    padding-left:8rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    align-items:center;
+    width:100%;
+}
+
+.hero-description {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    max-height: 15rem;
+    overflow: scroll;
+    max-height: 10rem;
+    transition: max-height 0.3s ease-in-out;
+    position:relative;
+    left:15rem;
+    text-align: center;
+    width:50%;
+    background-color: rgba(37, 33, 33, 0.6);
+    border-radius: 1rem;
+  }
+
+  
+  .hero-description button {
+    position: relative;
+    display: block;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.3rem;
+    text-align: center;
+    z-index: 3;
+  }
+  
+  .hero-description button:hover {
+    background-color: #555;
+  }
+  
+.attribute-container{
+    flex-direction: row;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:0.25rem;
+    text-indent: 0.5rem;
+}
+
+.hero-name{
+    font-size: calc(1.25rem + 1vmin);
+    font-weight: 900;
+    align-items: center;
+    justify-content: space-between;
+    display:flex;
+}
+
+.role-containers{
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    margin:0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.role{
+    display:flex;
+}
+.role .role-name-info{
+    width:20%;
+}
+.hero-animated{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+    display:block;
+}
+
+.hero-animated video{
+    position: absolute;
+    left:50%;
+    top:4rem;
+    height: 100%;
+    object-fit: cover;
+    z-index:-1;
+}
+.similar-heroes{
+    display:flex;
+    flex-direction: column;
+    max-width: 12%;
+    text-indent: 0.5rem;
+}
+.similar-hero{
+    cursor: pointer;
+    text-indent: 1.5rem;
+}
+
+.similar-hero:hover{
+    background-color: rgb(145, 143, 143);
+    color:black;
+}
+
+.abilities-container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.abilities-header{
+    width:100%;
+}
+.abilities-body{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    gap:0.5rem;
+    
+}
+
+.abilities-body img{
+    height:auto;
+    width:5rem;
+    border-radius: 0.5rem;
+    z-index:1;
+    opacity:0.75;
+    
+}
+.facets-body{
+    justify-content: space-between;
+    display:flex;
+    gap:0.25rem;
+}
+.facet{
+    width:20rem;
+    height:5rem;
+    justify-content: space-around;
+    font-size: large;
+    border-radius: 2rem;
+    filter:saturate(90%);
+}
+.facet img{
+    width: 3rem;
+    height: auto;
+}
+.shard-ability {
+    background-blend-mode:overlay;
+    background-image: url(https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/heroes/stats/aghs_shard.png);
+    background-size: cover;
+    height:5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    z-index:2;
+}
+.facets-body .tooltip{
+    font-size: 1.2rem;
+    white-space: normal;
+    width: 30rem;
+}
+.abilities-body .tooltip{
+    font-size: 1.2rem;
+    white-space: normal;
+    width: 30rem;
+    
+}
+.tooltip-ability{
+    z-index:100;
+}

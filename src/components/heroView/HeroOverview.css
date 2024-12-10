@@ -1,0 +1,136 @@
+.hero-overview {
+    padding-top: 5rem; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-card-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    overflow:visible;
+    position:relative;
+    box-sizing: border-box;
+    padding-bottom:2.5rem;
+}
+.hero-card {
+    text-align: center;
+    border-radius: 0.75rem;
+    padding-bottom: 0.625rem;
+    cursor: pointer;
+    transition: transform 0.5s ease, z-index 0.5s ease;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(39,39,39,1) 0%, rgba(30,10,10,1) 35%, rgb(8, 36, 41) 100%);
+    position: relative;
+    box-sizing: border-box;
+    
+  }
+  
+  .role-container {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%; 
+    padding: 1rem 0;
+    margin-top:-1px;
+    border-top: 0px;
+    background: linear-gradient(90deg, rgba(39,39,39,1) 0%, rgba(30,10,10,1) 35%, rgb(8, 36, 41) 100%);
+    border-radius: 0 0 0.75rem 0.75rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.3);
+    z-index: 5;
+    box-sizing: border-box;
+  }
+  
+  .hero-card:hover .role-container {
+    display: flex;
+    width:100%;
+  }
+  
+.hero-card img{
+    border-radius: 10px;
+}
+.hero-card:hover{
+    transform: scale(1.25);
+    z-index:10;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border:0px;
+}
+
+
+.hero-overview-filter-group{
+    align-items:flex-end;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:100%;
+    z-index:0.5;
+    height:10rem;
+    
+}
+
+.attribute-icon {
+    cursor: pointer;
+    display: flex;
+    background-color: rgb(94, 91, 87);
+    margin:0.3rem;
+    border-radius: 0.5rem;
+}
+
+.attribute-icon img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.attribute-icon.selected img{
+    filter:saturate(1) brightness(1);
+}
+
+.attribute-icon.unselected img{
+    filter:saturate(0) brightness(0);
+}
+
+.role{
+    padding-left: 0.625;
+    align-items: center;
+    width:90%;
+}
+.role-name{
+    font-size: 1rem;
+    width:35%;
+    text-align: left;
+    white-space: nowrap;
+    margin-left: 0.25rem;
+    align-items: center;
+}
+.role-bar{
+    height:0.625rem;
+    background-color: #4b6156f8;
+    align-items: center;
+    border-radius: 0.5rem;
+    max-width: 250px;
+}
+.text-filter {
+    display: flex;
+    position: relative;
+    margin: 0.625rem;
+    box-sizing: border-box;
+    color: #d9caca;
+    width: 10%; 
+    height: 2.5rem; 
+    background: transparent;
+    border-radius: 0.25rem; 
+    border: 1px solid #d9caca;
+    text-indent: 0.3125rem; 
+    right: 26rem; 
+}
+
+.name-container{
+    text-indent: 0.5rem;
+}

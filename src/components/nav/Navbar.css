@@ -1,0 +1,16 @@
+nav a{
+    float:inline-start;
+    color:#aa9f9f;
+    text-align: center;
+    padding:16px;
+    text-decoration: none;
+  
+  }
+  nav a:hover{
+    color:#fff;
+    background-color: #aa9f9f;
+  }
+  nav a.active{
+    color:#fff;
+    background-color: #7e7777;
+  }

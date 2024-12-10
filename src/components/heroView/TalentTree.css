@@ -1,0 +1,81 @@
+.talent-tree-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 55rem;
+  }
+  
+  .talent-tree {
+    position: relative;
+    width: 10rem;
+    height: auto;
+  }
+
+  .base-tree img {
+    position: relative;
+    min-width: 200px;
+    width: 10rem;
+    height: auto;
+  }
+  
+  .st0{fill:#5A7079;}
+	.base{fill:#5A7079;}
+  .fill{fill:#e3bc7c;}
+  .selected-talent{
+    border:0.25rem solid #e3bc7c;
+    border-radius: 1rem;
+  }
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    pointer-events: none;  
+    z-index: 100;
+    white-space: nowrap;
+    justify-content: space-around;
+    
+  }
+
+  .talent-tooltip-item{
+    display: flex;
+    flex-direction: row;
+
+  }
+  .tooltip-ability{
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    pointer-events: none;
+    
+  }
+  .tooltip-ability-title{
+    padding: 0.5rem;
+    max-width: 25rem;
+    white-space: normal;
+    font-size:1.4rem;
+    position:relative;
+  }
+  .tooltip-ability-description{
+    position: relative;
+  }
+  .talent-level{
+    justify-content: space-between;
+    display:flex;
+    flex-direction: row;
+    margin: 0.625rem auto;
+    width:50rem;
+  }
+  .talent-level h6{
+    width:20rem;
+    text-wrap: wrap;
+    text-align:center;
+    margin-top: 0.4rem;
+  }
+  

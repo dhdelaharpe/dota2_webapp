@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+html {
+  background: linear-gradient(90deg, rgba(39,39,39,1) 0%, rgba(30,10,10,1) 35%, rgb(8, 41, 22) 100%);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #aa9f9f;
+  z-index: 2;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: calc(10px + 1vmin); /* Responsive font size */
+  line-height: 1.5; /* Improve readability */
+}
+
+header {
+  padding: 1rem; /* Use rem for consistent padding */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 4.5rem;
+  background-color: #1f1d1d;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+h1, h2 {
+  text-align: center;
+  padding: 0.5rem; /* Use rem units */
+}
+
+p {
+  padding: 0.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+select, label {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+
+#data-container {
+  width: 80%;
+  max-width: 1200px; /* Prevent it from becoming too wide */
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(250, 3, 3, 0.425);
+}
+
+#root {
+  display: flex;
+}
+
+.app {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1800px; /* Prevent it from becoming too wide */
+  margin: 0 auto;
+  padding:5rem 1rem; /* Responsive padding */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.page-header {
+  margin: 1rem; /* Use rem units for consistent spacing */
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.select-hero {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.navbar{
+  display:flex;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #aa9f9f;
+  background-color: rgb(39,39,39);
+  text-rendering: optimizeLegibility;
+}
+
+/* Add media queries for different breakpoints */
+@media (max-width: 768px) {
+  header {
+    height: auto; /* Allow height to adjust */
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  .page-header {
+    flex-direction: column;
+  }
+
+  .inner {
+    padding: 10rem 1rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .inner {
+    padding: 4.5rem 2rem; /* Increase padding on larger screens */
+  }
+}
