@@ -24,7 +24,9 @@ api/match.json
 api/test.vdf 
 api/test2.vdf 
 api/__pycache__ 
-
+api/.vscode/*
+api/handlers/__pycache__
+api/handlers/graphql/__pycache__
 #src 
 node_modules
 dist
